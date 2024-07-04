@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-settings_module = 'Ecommerce.deployment' if 'WEBSITE_hOSTNAME' os.environ else 'Ecommerce.settings'
+settings_module = 'Ecommerce.deployment' if 'WEBSITE_HOSTNAME' os.environ else 'Ecommerce.settings'
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings_module')
 
